@@ -1,0 +1,25 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,257.85,3094.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,S3 Standard,0,230,2760,USD,S3 Standard storage (10000 GB per month)
+My Estimate,US East (N. Virginia),,S3 Glacier,0,0.06,0.72,USD,"S3 Glacier Average Object Size (16 MB), S3 Glacier storage (16 GB per month)"
+My Estimate,US East (N. Virginia),,S3 Glacier Deep Archive,0,0,0,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (2 GB per month)"
+My Estimate,US East (N. Virginia),,S3 Management and Analytics,0,7.03,84.36,USD,"S3 Storage Lens Objects (30 million per month), S3 Object Tagging (10 thousand per month), S3 Storage Class Analysis (10 million per month), S3 Inventory (10 million per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2628,31536,USD,Number of requests (HTTPS) (1000 per second)
+My Estimate,US East (N. Virginia),App servers,Amazon EC2,0,773.58,9282.96,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (250 GB), Instance type (m4.4xlarge)"
+My Estimate,US East (N. Virginia),web servers,Amazon EC2,0,133.95,1607.4,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (250 GB), Instance type (t2.large)"
+My Estimate,US East (N. Virginia),Database,Amazon RDS for MySQL,0,15359.46,184313.52,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (3), Instance type (db.m4.10xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,74.83,897.96,USD,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,60.23,722.76,USD,"Number of Network Load Balancers (1), Average TLS connection duration ( seconds), Average TCP connection duration (2000 seconds), Average number of new TCP connections (20 per second), Processed bytes per NLB for TCP (10 GB per hour)"
+My Estimate,US East (N. Virginia),database server,Amazon EC2,0,377.4,4528.8,USD,"Operating system (Linux), Quantity (2), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (500 GB), Instance type (m3.xlarge)"
+Total estimate,,,,,19902.39,238828.68,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Note:  Add 1 DB replica for data redundancy,,,,,,,,
+Add  1 Application Load balancer,,,,,,,,
+"Add more s3 options like s3 Management analytics, s3 glacier and Data transfer",,,,,,,,
+Improve RDS architecture to dm.m4.10xlarge,,,,,,,,
