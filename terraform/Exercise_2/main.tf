@@ -6,17 +6,17 @@ provider "aws" {
 
 data "archive_file" "lambda-archive" {
   type = "zip"
-  source_file = "greet_lambda.py"
-  output_path = "greet_lambda.zip"
+  source_file = "lambda.py"
+  output_path = "lambda.zip"
 }
 
 resource "aws_lambda_function" "lambda_function" {
   
   function_name = var.lambda_function_name
-  filename = "greet_lambda.zip"
-  handler = "greet_lambda.lambda_handler"
+  filename = "lambda.zip"
+  handler = "lambda.lambda_handler"
   role = aws_iam_role.iam_for_lambda.arn
-  source_code_hash = filebase64sha256("greet_lambda.zip")
+  source_code_hash = filebase64sha256("lambda.zip")
   runtime       = "python3.6"
 
   depends_on = [

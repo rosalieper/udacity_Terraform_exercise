@@ -4,12 +4,12 @@ variable "lambda_function_name" {
 }
 
 variable "access_key" {
-    default = "AKIAVHSJ7MYDUOTSL3ML"
+    default = 
     sensitive = true
 }
 
 variable "secret_key" {
-    default = "O0l1qNtY9rAQzYFML4HW2N99LV1nVqFHvJHm26TS"
+    default = 
     sensitive = true
 }
 
